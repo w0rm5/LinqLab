@@ -1,0 +1,9 @@
+R:\LinqLab\LinqLabTests\bin\Debug\LinqLabTests.dll
+R:\LinqLab\LinqLabTests\bin\Debug\LinqLabTests.pdb
+R:\LinqLab\LinqLabTests\bin\Debug\ExpectedObjects.dll
+R:\LinqLab\LinqLabTests\bin\Debug\LinqLab.exe
+R:\LinqLab\LinqLabTests\bin\Debug\LinqLab.pdb
+R:\LinqLab\LinqLabTests\bin\Debug\LinqLab.exe.config
+R:\LinqLab\LinqLabTests\obj\Debug\LinqLabTests.csprojResolveAssemblyReference.cache
+R:\LinqLab\LinqLabTests\obj\Debug\LinqLabTests.dll
+R:\LinqLab\LinqLabTests\obj\Debug\LinqLabTests.pdb
