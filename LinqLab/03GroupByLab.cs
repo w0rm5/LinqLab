@@ -14,13 +14,13 @@ namespace LinqLab
         {
             Source = new SampleDate().GetData();
         }
-        public IList<IGrouping<string, Sample>> 使用UserName作為群組依據()
+        public IList<IGrouping<string, Sample>> GroupByUserName()
         {
             var result = new List<IGrouping<string, Sample>>();
             return result;
         }
 
-        public IEnumerable<IGrouping<TempObj, Sample>> 使用UserName和CreateTime作為群組依據()
+        public IEnumerable<IGrouping<TempObj, Sample>> GroupByUserNameAndCreateTime()
         {
             var result = new List<IGrouping<TempObj, Sample>>();
             return result;

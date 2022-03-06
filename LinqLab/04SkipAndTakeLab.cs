@@ -15,19 +15,19 @@ namespace LinqLab
             Source = new SampleDate().GetData();
         }
 
-        public List<Sample> 跳過五筆資料()
+        public List<Sample> Skip5Data()
         {
             var result = new List<Sample>();
             return result;
         }
 
-        public List<Sample> 取得五筆資料()
+        public List<Sample> Take5Data()
         {
             var result = new List<Sample>();
             return result;
         }
 
-        public List<Sample> 跳過五筆取得兩筆()
+        public List<Sample> Skip5DataAndTake2Data()
         {
             var result = new List<Sample>();
             return result;

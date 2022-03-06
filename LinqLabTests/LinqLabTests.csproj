@@ -39,6 +39,14 @@
     <Reference Include="ExpectedObjects, Version=1.3.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\ExpectedObjects.1.3.0\lib\net40\ExpectedObjects.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.VisualStudio.TestPlatform.TestFramework, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <HintPath>..\packages\MSTest.TestFramework.2.2.8\lib\net45\Microsoft.VisualStudio.TestPlatform.TestFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <HintPath>..\packages\MSTest.TestFramework.2.2.8\lib\net45\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
   </ItemGroup>
   <Choose>
@@ -57,11 +65,11 @@
   </Choose>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="01FirstAndSingle練習Tests.cs" />
-    <Compile Include="05GroupBy練習Tests.cs" />
-    <Compile Include="03OrderBy練習Tests.cs" />
-    <Compile Include="04SkipAndTake練習Tests.cs" />
-    <Compile Include="02Where練習Tests.cs" />
+    <Compile Include="01FirstAndSingleTests.cs" />
+    <Compile Include="05GroupByTests.cs" />
+    <Compile Include="03OrderByTests.cs" />
+    <Compile Include="04SkipAndTakeTests.cs" />
+    <Compile Include="02WhereTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\LinqLab\LinqLab.csproj">

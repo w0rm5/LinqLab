@@ -13,44 +13,44 @@ namespace LinqLab
         {
             Source = new SampleDate().GetData();
         }
-        public List<Sample> 搜尋Id大於8的資料()
+        public List<Sample> WhereToGetIdBiggerThen8()
         {
             var result = new List<Sample>();
             return result;
         }
 
-        public List<Sample> 搜尋Price等於200的資料()
+        public List<Sample> WhereToGetPrizeBiggerThen200()
         {
             var result = new List<Sample>();
             return result;
         }
 
-        public List<Sample> 搜尋UserName開頭為d的資料()
+        public List<Sample> WhereToGetUserNameStartWithD()
         {
             var result = new List<Sample>();
             return result;
         }
 
-        public List<Sample> 搜尋UserName包含e的資料()
+        public List<Sample> WhereToGetUserNameContainE()
         {
             var result = new List<Sample>();
             return result;
         }
 
-        public List<Sample> 搜尋UserName結尾為o的資料()
+        public List<Sample> WhereToGetUserNameEndWithO()
         {
             var result = new List<Sample>();
             return result;
         }
 
-        public List<Sample> 搜尋UserName是demo和joey的資料()
+        public List<Sample> WhereToGetUserNameEqualToDemoAndJoey()
         {
             var whereStr = new[] {"demo","joey" };
             var result = new List<Sample>();
             return result;
         }
 
-        public bool 判斷是否有Id等於99的資料()
+        public bool WhereToCheckIsAnyIdEqualTo99()
         {
             var result = true;
             return result;

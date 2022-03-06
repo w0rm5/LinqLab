@@ -14,19 +14,19 @@ namespace LinqLab
             Source = new SampleDate().GetData();
         }
 
-        public List<Sample> 請使用Id升冪排序()
+        public List<Sample> AscendingId()
         {
             var result = new List<Sample>();
             return result;
         }
 
-        public List<Sample> 請使用Id降冪排序()
+        public List<Sample> DescendingId()
         {
             var result = new List<Sample>();
             return result;
         }
 
-        public List<Sample> 請使用Price昇冪排序後再使用Id昇冪排序Test()
+        public List<Sample> AscendingPriceAndThenAscendingId()
         {
             var result = new List<Sample>();
             return result;
