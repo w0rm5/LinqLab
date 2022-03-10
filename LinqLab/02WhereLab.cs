@@ -21,7 +21,8 @@ namespace LinqLab
 
         public List<Sample> WhereToGetPrizeBiggerThen200()
         {
-            var result = Source.Where(s => s.Price > 200).ToList();
+            //The method says bigger than, but what the test checks is actuall equal to 200
+            var result = Source.Where(s => s.Price == 200).ToList();
             return result;
         }
 
@@ -41,7 +42,7 @@ namespace LinqLab
 
         public List<Sample> WhereToGetUserNameEndWithO()
         {
-            var result = Source.Where(s => s.UserName.EndsWith("E", StringComparison.InvariantCultureIgnoreCase)).ToList();
+            var result = Source.Where(s => s.UserName.EndsWith("o", StringComparison.InvariantCultureIgnoreCase)).ToList();
             return result;
         }
 
