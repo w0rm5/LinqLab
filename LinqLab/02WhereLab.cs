@@ -15,44 +15,46 @@ namespace LinqLab
         }
         public List<Sample> WhereToGetIdBiggerThen8()
         {
-            var result = new List<Sample>();
+            var result = Source.Where(s => s.Id > 8).ToList();
             return result;
         }
 
         public List<Sample> WhereToGetPrizeBiggerThen200()
         {
-            var result = new List<Sample>();
+            var result = Source.Where(s => s.Price > 200).ToList();
             return result;
         }
 
         public List<Sample> WhereToGetUserNameStartWithD()
         {
-            var result = new List<Sample>();
+            var result = Source.Where(s => s.UserName.StartsWith("D", StringComparison.InvariantCultureIgnoreCase)).ToList();
             return result;
         }
 
         public List<Sample> WhereToGetUserNameContainE()
         {
-            var result = new List<Sample>();
+            // We could this IndexOf to ignore case, but the exercise said to use Contains
+            //var result = Source.Where(s => s.UserName.IndexOf("e", StringComparison.OrdinalIgnoreCase) >= 0).ToList();
+            var result = Source.Where(s => s.UserName.Contains("E") || s.UserName.Contains("e")).ToList();
             return result;
         }
 
         public List<Sample> WhereToGetUserNameEndWithO()
         {
-            var result = new List<Sample>();
+            var result = Source.Where(s => s.UserName.EndsWith("E", StringComparison.InvariantCultureIgnoreCase)).ToList();
             return result;
         }
 
         public List<Sample> WhereToGetUserNameEqualToDemoAndJoey()
         {
             var whereStr = new[] {"demo","joey" };
-            var result = new List<Sample>();
+            var result = Source.Where(s => whereStr.Contains(s.UserName)).ToList();
             return result;
         }
 
         public bool WhereToCheckIsAnyIdEqualTo99()
         {
-            var result = true;
+            var result = Source.Any(s => s.Id == 99);
             return result;
         }
     }
